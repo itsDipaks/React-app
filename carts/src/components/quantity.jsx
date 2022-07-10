@@ -4,13 +4,24 @@ function Qty({ qty, decrementcount, incrementcount }) {
       style={{
         display: "flex",
         gap: "1rem",
+        height:"30px",
+        alignItems:"center",
+        justifyContent:"space-between",
+        width:"30%"
       }}
     >
-      <button onClick={decrementcount}>-</button>
+      <button className="d" style={{
+        height:"100%",
+        width:"30%",
+        
+      }} disabled={qty===0}  onClick={decrementcount}>-</button>
       <div>
         <h4>{qty}</h4>
       </div>
-      <button onClick={incrementcount}>+</button>
+      <button className="d" style={{
+        height:"100%",
+        width:"30%"
+      }} onClick={incrementcount}>+</button>
     </div>
   );
 }

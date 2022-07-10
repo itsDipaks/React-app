@@ -4,10 +4,15 @@ function Lableprice({ lable, price }) {
       style={{
         display: "flex",
         gap: "1rem",
+        justifyContent:"space-between",
+       
+        width:"50%"
+        ,height:"50px",
+        alignItems:"center"
       }}
     >
       <div>{lable}</div>
-      <div> $ {price}</div>
+      <div> ₹{price}</div>
     </div>
   );
 }
